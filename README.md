@@ -43,8 +43,8 @@
 	},
 ```
 
-	- In our server's main/app file, add a condition to serve our newly created `build` directory when we're in production
-		- Adding this condition after our routes makes sure that we are going to serve up the production frontend on Heroku if our backend server does not have any matching routes
+- In our server's main/app file, add a condition to serve our newly created `build` directory when we're in production
+	- Adding this condition after our routes makes sure that we are going to serve up the production frontend on Heroku if our backend server does not have any matching routes
 ```js
 // server's app.js
 if (process.env.NODE_ENV === 'production') {
